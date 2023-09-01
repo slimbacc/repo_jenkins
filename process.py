@@ -49,5 +49,6 @@ def create_multi_order_customers(joined_df: DataFrame) -> DataFrame:
 # multi_order_customers.write.csv("path/to/save/multi_order_customers.csv", header=True)
 
 #
+print("process Run successfully")
 # Stop spark session
 spark.stop()
