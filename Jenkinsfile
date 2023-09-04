@@ -15,10 +15,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the Python script
-                echo 'python process.py'
+                sh 'python process.py'
             }
         }
-        // Add more stages as needed
+        stage('Send Build Logs to Kafka') {
+            steps {
+                sh 'python send_to_kafka.py'
+            }
+        }
     }
     
     post {
