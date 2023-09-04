@@ -5,8 +5,8 @@ o pipeline {
         stage("Clone Git Repository") {
             steps {
                 git(
-                    url: "https://github.com/ssbostan/neptune.git",
-                    branch: "master",
+                    url: "https://github.com/slimbacc/repo_jenkins.git",
+                    branch: "main",
                     changelog: true,
                     poll: true
                 )
