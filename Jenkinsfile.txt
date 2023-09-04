@@ -1,4 +1,4 @@
-pipeline {
+o pipeline {
     agent any
     
     stages {
@@ -19,10 +19,10 @@ pipeline {
     
     post {
         success {
-            // Actions to take on successful build
+            echo 'success'
         }
         failure {
-            // Actions to take on build failure
+            echo 'failure'
         }
     }
 }
