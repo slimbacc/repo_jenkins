@@ -21,7 +21,7 @@ o pipeline {
         stage('Build') {
             steps {
                 // Run the Python script
-                sh 'python process.py'
+                echo 'python process.py'
             }
         }
         // Add more stages as needed
